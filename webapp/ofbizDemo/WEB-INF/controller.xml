@@ -63,6 +63,14 @@ under the License.
         <response name="success" type="view" value="AddOfbizDemoFtl"/>
     </request-map>
 
+    <request-map uri="createOfbizDemoEventFtl">
+        <security https="true" auth="true"/>
+        <event type="java" path="com.hotwaxsystems.ofbizdemo.events.OfbizDemoEvents" invoke="createOfbizDemoEvent"/>
+        <response name="success" type="view" value="main"/>
+        <response name="error" type="view" value="main"/>
+    </request-map>
+
+
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#main"/>
     <view-map name="FindOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
