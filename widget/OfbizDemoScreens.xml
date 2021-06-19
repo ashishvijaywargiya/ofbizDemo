@@ -27,9 +27,11 @@ under the License.
                 <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
             </actions>
             <widgets>
-                <decorator-screen name="OfbizDemoCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                <decorator-screen name="OfbizDemoCommonDecorator" location="component://ofbizDemo/widget/CommonScreens.xml">
                     <decorator-section name="body">
-                        <!--label text="Hello World!! :)"/-->
+                        <!--label text="${parameters}"/-->
+                        <!--label text="============================="/>
+                        <label text="Context value is: ====== ${context}"/-->
                         <screenlet title="Add Ofbiz Demo">
                             <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
                         </screenlet>

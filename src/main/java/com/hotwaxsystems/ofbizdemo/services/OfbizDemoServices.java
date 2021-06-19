@@ -24,8 +24,7 @@ public class OfbizDemoServices {
             // Creating record in database for OfbizDemo entity for prepared value
             ofbizDemo = delegator.create(ofbizDemo);
             result.put("ofbizDemoId", ofbizDemo.getString("ofbizDemoId"));
-            Debug.log("==========This is my first Java Service implementation in Apache OFBiz. OfbizDemo record created successfully with ofbizDemoId: "
-                    + ofbizDemo.getString("ofbizDemoId"));
+            Debug.log("==========This is my first Java Service implementation in Apache OFBiz. OfbizDemo record created successfully with ofbizDemoId: "+ ofbizDemo.getString("ofbizDemoId"));
         } catch (GenericEntityException e) {
             Debug.logError(e, module);
             return ServiceUtil.returnError("Error in creating record in OfbizDemo entity ........" +module);
