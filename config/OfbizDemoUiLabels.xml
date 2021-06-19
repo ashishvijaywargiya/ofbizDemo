@@ -52,4 +52,17 @@ under the License.
     <property key="OfbizDemoLastName">
         <value xml:lang="en">Last Name</value>
     </property>
+    <property key="OfbizDemoComment">
+        <value xml:lang="en">Comments</value>
+    </property>
+
+    <property key="OfbizDemoType">
+        <value xml:lang="en">Ofbiz Demo Type</value>
+    </property>
+
+
+    <property key="OfbizDemoAddFtl">
+        <value xml:lang="en">Addition by FTL - OfbizDemo</value>
+    </property>
+
 </resource>
