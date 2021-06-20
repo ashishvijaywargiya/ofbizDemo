@@ -65,7 +65,7 @@ under the License.
         </section>
     </screen>
 
-    <screen name="OfbizDemoCommonDecorator">
+    <screen name="OfbizDemoCommonCustomDecorator">
         <section>
             <actions>
                 <property-map resource="OfbizDemoUiLabels" map-name="uiLabelMap" global="true"/>
