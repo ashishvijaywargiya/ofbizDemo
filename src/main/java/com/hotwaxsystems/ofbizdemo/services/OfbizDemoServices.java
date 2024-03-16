@@ -27,7 +27,7 @@ public class OfbizDemoServices {
             Debug.log("OfbizDemo record created with ofbizDemoId: " + ofbizDemo.getString("ofbizDemoId"));
         } catch (GenericEntityException e) {
             Debug.logError(e, MODULE);
-            return ServiceUtil.returnError("Error in creating record in OfbizDemo entity ........" + MODULE);
+            return ServiceUtil.returnError("Error in creating record in OfbizDemo entity .." + MODULE);
         }
         return result;
     }
