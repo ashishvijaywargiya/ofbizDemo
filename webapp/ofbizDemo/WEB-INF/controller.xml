@@ -46,12 +46,23 @@ under the License.
 
     <request-map uri="createOfbizDemo">
         <security https="true" auth="true"/>
-        <event type="service" invoke="createOfbizDemoByJavaService"/>
-        <response name="success" type="view" value="main"/>
+        <event type="service" invoke="createOfbizDemo"/>
+        <response name="success" type="view" value="AddOfbizDemoEvent"/>
+        <response name="error" type="view" value="AddOfbizDemoEvent"/>
     </request-map>
-    <request-map uri="FindOfbizDemo">
+
+    <request-map uri="createOfbizDemoByJavaService">
         <security https="true" auth="true"/>
-        <response name="success" type="view" value="FindOfbizDemo"/>
+        <event type="service" invoke="createOfbizDemoByJavaService"/>
+        <response name="success" type="view" value="AddOfbizDemoEvent"/>
+        <response name="error" type="view" value="AddOfbizDemoEvent"/>
+    </request-map>
+
+    <request-map uri="createOfbizDemoByGroovyService">
+        <security https="true" auth="true"/>
+        <event type="service" invoke="createOfbizDemoByGroovyService"/>
+        <response name="success" type="view" value="AddOfbizDemoEvent"/>
+        <response name="error" type="view" value="AddOfbizDemoEvent"/>
     </request-map>
 
     <request-map uri="createOfbizDemoEvent">
@@ -59,6 +70,11 @@ under the License.
         <event type="java" path="com.hotwaxsystems.ofbizdemo.events.OfbizDemoEvents" invoke="createOfbizDemoEvent"/>
         <response name="success" type="view" value="AddOfbizDemoEvent"/>
         <response name="error" type="view" value="AddOfbizDemoEvent"/>
+    </request-map>
+
+    <request-map uri="FindOfbizDemo">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="FindOfbizDemo"/>
     </request-map>
 
     <request-map uri="AddOfbizDemoFtl">
