@@ -36,7 +36,7 @@ public class OfbizDemoEvents {
             dispatcher.runSync("createOfbizDemoByGroovyService", UtilMisc.toMap("ofbizDemoTypeId", ofbizDemoTypeId,
                     "firstName", firstName, "lastName", lastName, "comments", comments, "userLogin", userLogin));
         } catch (GenericServiceException e) {
-            String errMsg = "Unable to create new records in OfbizDemo entity: " + e.toString();
+            String errMsg = "Unable to create new records in OfbizDemo entity: " + e.getMessage();
             request.setAttribute("_ERROR_MESSAGE_", errMsg);
             return "error";
         }
