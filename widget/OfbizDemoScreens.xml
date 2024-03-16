@@ -24,15 +24,32 @@ under the License.
     <screen name="main">
         <section>
             <actions>
-                <set field="titleProperty" value="PageTitleAddOfbizDemos"/>
                 <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
             </actions>
             <widgets>
                 <decorator-screen name="OfbizDemoCommonDecorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
-                        <!--label text="${parameters}"/-->
-                        <!--label text="============================="/>
-                        <label text="Context value is: ====== ${context}"/-->
+                        <!--
+                        <label text="The value of parameters map is ===== ${parameters}"/>
+                        <label text="================================================="/>
+                        <label text="The value of context map is ===== ${context}"/>
+                        -->
+                        <label text="Hello World!! :)"/>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="AddOfbizDemoEvent">
+        <section>
+            <actions>
+                <set field="headerItem" value="addOfbizDemoEvent"/>
+                <set field="titleProperty" value="PageTitleAddOfbizDemo"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
                         <screenlet title="Add Ofbiz Demo">
                             <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
                         </screenlet>

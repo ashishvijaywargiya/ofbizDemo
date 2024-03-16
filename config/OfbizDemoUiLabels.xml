@@ -44,6 +44,14 @@ under the License.
         <value xml:lang="en">Ofbiz Demo</value>
     </property>
 
+    <property key="PageTitleAddOfbizDemo">
+        <value xml:lang="en">Add OfbizDemo by Event</value>
+    </property>
+
+    <property key="PageTitleFindOfbizDemo">
+        <value xml:lang="en">Find OfbizDemo</value>
+    </property>
+
     <property key="OfbizDemoListOfbizDemos">
         <value xml:lang="en">List Ofbiz Demo</value>
     </property>
@@ -72,9 +80,11 @@ under the License.
         <value xml:lang="en">Ofbiz Demo Type</value>
     </property>
 
+    <property key="AddOfbizDemoEvent">
+        <value xml:lang="en">Addition by Event - OfbizDemo</value>
+    </property>
 
     <property key="OfbizDemoAddFtl">
         <value xml:lang="en">Addition by FTL - OfbizDemo</value>
     </property>
-
 </resource>

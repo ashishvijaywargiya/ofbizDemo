@@ -41,6 +41,9 @@ under the License.
 
     <!-- Request Mappings -->
     <request-map uri="main"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
+
+    <request-map uri="AddOfbizDemoEvent"><security https="true" auth="true"/><response name="success" type="view" value="AddOfbizDemoEvent"/></request-map>
+
     <request-map uri="createOfbizDemo">
         <security https="true" auth="true"/>
         <event type="service" invoke="createOfbizDemoByJavaService"/>
@@ -54,8 +57,8 @@ under the License.
     <request-map uri="createOfbizDemoEvent">
         <security https="true" auth="true"/>
         <event type="java" path="com.hotwaxsystems.ofbizdemo.events.OfbizDemoEvents" invoke="createOfbizDemoEvent"/>
-        <response name="success" type="view" value="main"/>
-        <response name="error" type="view" value="main"/>
+        <response name="success" type="view" value="AddOfbizDemoEvent"/>
+        <response name="error" type="view" value="AddOfbizDemoEvent"/>
     </request-map>
 
     <request-map uri="AddOfbizDemoFtl">
@@ -73,6 +76,7 @@ under the License.
 
     <!-- View Mappings -->
     <view-map name="main" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#main"/>
+    <view-map name="AddOfbizDemoEvent" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#AddOfbizDemoEvent"/>
     <view-map name="FindOfbizDemo" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#FindOfbizDemo"/>
     <view-map name="AddOfbizDemoFtl" type="screen" page="component://ofbizDemo/widget/OfbizDemoScreens.xml#AddOfbizDemoFtl"/>
 </site-conf>
