@@ -34,7 +34,7 @@ under the License.
                         <label text="================================================="/>
                         <label text="The value of context map is ===== ${context}"/>
                         -->
-                        <label text="Hello World!! :)"/>
+                        <label text="Hello World - My first Web Page in OFBiz!! :)"/>
                     </decorator-section>
                 </decorator-screen>
             </widgets>
