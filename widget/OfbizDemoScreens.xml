@@ -96,7 +96,7 @@ under the License.
     <screen name="AddOfbizDemoFtl">
     <section>
         <actions>
-            <set field="titleProperty" value="PageTitleAddOfbizDemos"/>
+            <set field="titleProperty" value="PageTitleOfbizDemosByFtl"/>
             <set field="headerItem" value="addOfbizDemoFtl"/>
             <script location="component://ofbizDemo/webapp/ofbizDemo/WEB-INF/actions/crud/ListOfbizDemo.groovy"/>
         </actions>

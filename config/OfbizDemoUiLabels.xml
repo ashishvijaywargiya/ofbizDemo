@@ -48,6 +48,10 @@ under the License.
         <value xml:lang="en">Add OfbizDemo by Event</value>
     </property>
 
+    <property key="PageTitleOfbizDemosByFtl">
+        <value xml:lang="en">OfbizDemos by FTL</value>
+    </property>
+
     <property key="PageTitleFindOfbizDemo">
         <value xml:lang="en">Find OfbizDemo</value>
     </property>
