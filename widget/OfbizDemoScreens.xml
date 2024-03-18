@@ -35,6 +35,7 @@ under the License.
                         <label text="The value of context map is ===== ${context}"/>
                         -->
                         <label text="Hello World - My first Web Page in OFBiz!! :)"/>
+                        <label text="The value of uiLabelMap is ------- ${uiLabelMap.OfbizDemoType}"/>
                     </decorator-section>
                 </decorator-screen>
             </widgets>
@@ -51,6 +52,7 @@ under the License.
                 <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
                     <decorator-section name="body">
                         <screenlet title="Add Ofbiz Demo">
+                            <label text="The value of ofbizDemoId is ====== ${parameters.ofbizDemoId}"/>
                             <include-form name="AddOfbizDemo" location="component://ofbizDemo/widget/OfbizDemoForms.xml"/>
                         </screenlet>
                     </decorator-section>
