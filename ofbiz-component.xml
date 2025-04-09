@@ -46,6 +46,8 @@ under the License.
     <test-suite loader="main" location="testdef/OfbizDemoTests.xml"/>
 
     <!-- web applications; will be mounted when using the embedded container -->
+    <!-- Test Comment -->
+
     <webapp name="ofbizDemo"
         title="OfbizDemo"
         server="default-server"
