@@ -40,6 +40,12 @@ under the License.
         <prim-key field="ofbizDemoTypeId"/>
     </entity>
 
+    <entity entity-name="NewOneOfbizDemoType" package-name="org.apache.ofbiz.ofbizdemo" title="OfbizDemo Type Entity">
+        <field name="ofbizDemoTypeId" type="id"><description>primary sequenced ID</description></field>
+        <field name="description" type="description"></field>
+        <prim-key field="ofbizDemoTypeId"/>
+    </entity>
+  
 
     <entity entity-name="OfbizDemo" package-name="org.apache.ofbiz.ofbizdemo" title="OfbizDemo Entity">
         <field name="ofbizDemoId" type="id"><description>primary sequenced ID</description></field>
