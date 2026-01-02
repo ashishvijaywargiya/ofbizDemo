@@ -15,7 +15,7 @@ jobs:
 
       - name: Get git diff
         id: diff
-        uses: tj-actions/git-diff@v2.8.1
+        uses: tj-actions/git-diff@v3
 
       - name: Convert diff to HTML
         if: steps.diff.outputs.diff != ''
