@@ -7,4 +7,4 @@ on:
 
 jobs:
   notify:
-    uses: ashishvijaywargiya/ofbizdemo/.github/.github/workflows/git-diff-email.yml@main
+    uses: ./.github/.github/workflows/git-diff-email.yml@main
