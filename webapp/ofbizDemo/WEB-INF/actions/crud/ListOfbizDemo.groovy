@@ -4,8 +4,6 @@
 //context.ofbizDemoList = ofbizDemoList;
 
 // New way of doing the above in Groovy - Use DSL Capabilities
-context.ofbizDemoTypes = from("OfbizDemoType").queryList()
+context.ofbizDemoTypes = from('OfbizDemoType').queryList()
 
-ofbizDemoList = from("OfbizDemo").queryList()
-logInfo("The value of ofbizDemoList is ====== " + ofbizDemoList)
-context.ofbizDemoList = ofbizDemoList;
+context.ofbizDemoList = from('OfbizDemo').queryList()
